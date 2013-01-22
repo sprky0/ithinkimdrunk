@@ -32,6 +32,37 @@ body {
 
 }
 
+/* THANKS BEEEEES! */
+
+@-moz-keyframes phase {
+	0% { opacity: 1; }
+	100% { opacity: 0.6; }
+}
+@-webkit-keyframes phase {
+	0% { opacity: 1; }
+	100% { opacity: 0.6; }
+}
+@-o-keyframes phase {
+	0% { opacity: 1; }
+	100% { opacity: 0.6; }
+}
+@-ms-keyframes phase {
+	0% { opacity: 1; }
+	100% { opacity: 0.6; }
+}
+@keyframes phase {
+	0% { opacity: 1; }
+	100% { opacity: 0.6; }
+}
+
+iframe {
+	-moz-animation: phase 2s infinite linear;
+	-webkit-animation: phase 2s infinite linear;
+	-o-animation: phase 2s infinite linear;
+	-ms-animation: phase 2s infinite linear;
+	animation: phase 2s infinite linear;
+}
+
 </style>
 </head>
 <body><iframe src="<?php echo $url ?>" class="drunkview"></iframe></body>
